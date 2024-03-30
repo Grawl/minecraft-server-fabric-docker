@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "${PORT}:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: FABRIC
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
