@@ -34,3 +34,16 @@ You can change this variable in `.env`.
 ## `data` folder
 
 Anything copied to `data` folder will be copied to server root and available by server runtime.
+
+## Sending commands
+
+As described in [documentation](https://docker-minecraft-server.readthedocs.io/en/latest/commands/), use RCON.
+
+Example:
+
+```
+# rcon-cli
+> auth setGlobalPassword New-Password4
+```
+
+Tip: you cannot use `#` character in global password. Maybe other special characters is not working too.
