@@ -39,7 +39,7 @@ Anything copied to `data` folder will be copied to server root and available by 
 
 As described in [documentation](https://docker-minecraft-server.readthedocs.io/en/latest/commands/), use RCON.
 
-Example:
+Example to set [global password for EasyAuth](https://github.com/NikitaCartes/EasyAuth/wiki/Global-password) mod:
 
 ```
 # rcon-cli
